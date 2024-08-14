@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pointer To Pointer</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 20px;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/photo-1538370965046-79c0d6907d47.avif);
+        color: wheat;
+        font-size: 25px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>
+Pointer To pointer</u>
+    </h1>
+    <pre>
+        #include<stdio.h>
+
+            int main()
+            {
+                printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+                int var;
+                int *ptr;
+                int **pptr;
+            
+                var = 50;
+            
+                // take the address of the variable var
+                ptr = &var;
+            
+                // taking the address of ptr using address of operator-&
+                pptr = &ptr;
+            
+                // take the value using the pptr
+                printf("\n\nValue of var = %d\n\n", var);
+            
+                printf("\n\nValue available at *ptr = %d\n\n", *ptr);
+            
+                printf("\n\nValue available at **pptr = %d\n\n", **pptr);
+            
+                printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+                return 0;
+            }
+        </pre>
+</body>
+</html>

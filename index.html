@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONTENT MASTER</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/Screenshot 2023-02-05 193911.png" width="300px"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">COURSES</a></li>
+                        <li><a href="StudyMaterial.html">STUDY MATERIALS</a></li>
+                        <li><a href="CodingContents.html">CODING CONTENTS</a></li>
+                        <li><a href="ImportantQuestions.html">IMPORTANT QUESTIONS</a></li>
+                        <li><a href="AboutUs.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Content Master</h1>
+            <p>Great Web Design Without functionality Is Like a Sports Car With No Engine.</p>
+            <a href="AboutUs.html" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
+        </section>
+
+        <!------ Course ------>
+
+        <section class="course">
+            <h1>What We Provide</h1>
+            <p>
+                <li>Notes,Assignments and Syllabus for all B Tech Students.</li>
+                <li>Source Code for Coders.</li>
+                <li>Top Coding Platforms.</li>
+            </p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>good</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>good</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>good</p>
+                </div>
+            </div>
+        </section>
+
+        <!------- coding ------>
+
+    <section class="coding">
+        <h1>Top Coding Platforms</h1>
+
+        <div class="row">
+            <div class="coding-col">
+                <img src="img/download.png" width="300px">
+                <div class="layer">
+                    <h3>
+                    <a href="https://www.w3schools.com">W3Schools</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="coding-col">
+                <img src="img/gfg_200x200-min.png" width="300px">
+                <div class="layer">
+                    <h3>
+                        <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="coding-col">
+                <img src="img/HackerRank_logo.png" width="300px">
+                <div class="layer">
+                    <h3>
+                        <a href="https://www.hackerrank.com/">HackerRank</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------- testimonials -------->
+
+    <section class="testimonials">
+        <h1>Reviews</h1>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="img/roman-holoschchuk-KAPRQjlSzCA-unsplash.jpg">
+                <div>
+                    <p>Good platform for students and tutors, the app is very user friendly. enquiries are also go.</p>
+                </div>
+                <h3>Roman Holoschchuk</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="img/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg">
+                <div>
+                    <p>Learning through this website is amazing. It helps me Lott in learning.</p>
+                </div>
+                <h3>Sergio de Paula</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="img/anastasia-vityukova-rpF3p_RrE9g-unsplash.jpg">
+                <div>
+                    <p>Great platform to enhance your children performance. Content Master provides best contents to the students.</p>
+                </div>
+                <h3>Anastasia Vityukova</h3>
+            </div>
+        </div>
+    </section>
+
+        <!--------JavaScript for Toggle Menu------->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+
+        </script>
+
+    </body>
+</html>

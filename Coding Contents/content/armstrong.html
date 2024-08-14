@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 20px;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/photo-1538370965046-79c0d6907d47.avif);
+        color: wheat;
+        font-size: 25px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>
+Armstrong Number</u>
+    </h1>
+    <pre>
+        #include<stdio.h>
+            <br>
+            #include<math.h><br>
+            
+            int main()<br>
+            {<br>
+                printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");<br>
+                int n,sum,i,t,a;<br>
+                printf("\n\n\nThe Armstrong numbers in between 1 to 500 are : \n\n\n");<br>
+            
+                for(i = 1; i <= 500; i++)<br>
+                {<br>
+                    t = i;  // as we need to retain the original number<br>
+                    sum = 0;<br>
+                    while(t != 0)<br>
+                    {<br>
+                        a = t%10;<br>
+                        sum += a*a*a;<br>
+                        t = t/10;<br>
+                    }<br>
+            
+                    if(sum == i)<br>
+                    printf("\n\t\t\t%d", i);<br>
+                }<br>
+            
+                printf("\n\n\n\n\t\t\tCoding is Fun !\n\n\n");<br>
+                return 0;<br>
+            }<br>
+    </pre>
+   
+</body>
+</html>

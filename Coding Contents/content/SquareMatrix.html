@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Matrix</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 20px;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/photo-1538370965046-79c0d6907d47.avif);
+        color: wheat;
+        font-size: 25px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>
+Square Matrix</u>
+    </h1>
+    <pre>
+        #include<stdio.h>
+
+            int main()
+            {
+                printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+            
+                int c, d, a[10][10], b[10][10], n, temp;
+                printf("\nEnter the dimension of the matrix: \n\n");
+                scanf("%d", &n);
+            
+                printf("\nEnter the %d elements of the matrix: \n\n",n*n);
+                for(c = 0; c < n; c++) // to iterate the rows
+                    for(d = 0; d < n; d++) // to iterate the columns
+                        scanf("%d", &a[c][d]);
+            
+                // finding transpose of a matrix and storing it in b[][]
+                for(c = 0; c < n; c++) // to iterate the rows
+                    for(d = 0; d < n; d++) //to iterate the columns
+                        b[d][c] = a[c][d];
+            
+                // printing the original matrix
+                printf("\n\nThe original matrix is: \n\n");
+                for(c = 0; c < n; c++)   // to iterate the rows
+                {
+                    for(d = 0; d < n; d++)   // to iterate the columns
+                    {
+                        printf("%d\t", a[c][d]);
+                    }
+                printf("\n");
+                }
+            
+                // printing the transpose of the entered matrix
+                printf("\n\nThe Transpose matrix is: \n\n");
+                for(c = 0; c < n; c++) // to iterate the rows
+                {
+                    for(d = 0; d < n; d++)   // to iterate the columns
+                    {
+                        printf("%d\t", b[c][d]);
+                    }
+                    printf("\n");
+                }
+            
+                // checking if the original matrix is same as its transpose
+                for(c = 0; c < n; c++)   // to iterate the rows
+                {
+                    for(d = 0; d < n; d++)   // to iterate the columns
+                    {
+                        /* 
+                            even if they differ by a single element, 
+                            the matrix is not symmetric
+                        */
+                        if(a[c][d] != b[c][d]) 
+                        {
+                            printf("\n\nMatrix is not Symmetric\n\n");
+                            
+                        }
+                    }
+                }
+            
+                /* 
+                    if the program is not terminated yet, 
+                    it means the matrix is symmetric
+                */
+                printf("\n\nMatrix is Symmetric\n\n");
+                printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+                return 0;
+            }
+        </pre>
+</body>
+</html>

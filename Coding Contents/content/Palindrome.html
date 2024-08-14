@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 20px;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/photo-1538370965046-79c0d6907d47.avif);
+        color: wheat;
+        font-size: 25px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>
+Palindrome</u>
+    </h1>
+    <pre>
+        #include<stdio.h>
+
+            // declaring the recursive function
+            int isPal(int );
+            
+            /*
+                global declaration to use the same value 
+                in both the functions
+            */
+            int n;
+            
+            int main()
+            {
+                printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+                int palindrome;
+                printf("\n\nEnter a number to check for Palindrome: ");
+                scanf("%d", &n);
+                palindrome = isPal(n);
+                if(palindrome == 1)
+                    printf("\n\n\n%d is palindrome\n\n", n);
+                else
+                    printf("\n\n\n%d is not palindrome\n\n", n);
+            
+                printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+                return 0;
+            }
+            
+            int isPal(int aj)
+            {
+                static int sum = 0;
+                if(aj != 0)
+                {
+                    sum = sum *10 + aj%10;
+                    isPal(aj/10);   // recursive call same as while(n!=0) using loop
+                }
+                else if(sum == n)
+                    return 1;
+                else
+                    return 0;
+            }
+        </pre>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 20px;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/photo-1538370965046-79c0d6907d47.avif);
+        color: wheat;
+        font-size: 25px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>
+Fibonacci Series</u>
+    </h1>
+    <pre>
+    #include<stdio.h>
+        // declaring the function
+        void printFibo(int );<br>
+        
+        int main()<br>
+        {
+            printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");<br>
+            int k, n;<br>
+            long int i = 0, j = 1;<br>
+            printf("Enter the length of the Fibonacci series: ");<br>
+            scanf("%d", &n);<br>
+            printf("\n\nfirst %d terms of Fibonacci series are:\n\n\n",n);<br>
+            printf("%d ", 1);<br>
+            printFibo(n);<br>
+            printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+            return 0;
+        }
+        
+        void printFibo(int aj)
+        {
+            static long int first = 0, second = 1, sum;
+            if(aj > 1)
+            {
+                sum = first + second;
+                first = second;
+                second = sum;
+                printf("%ld ", sum);
+                printFibo(aj-1);    // recursive call
+            }
+            else
+            {
+                // after the elements, for line break
+                printf("\n\n\n");
+            }
+        }
+        </pre>
+</body>
+</html>
